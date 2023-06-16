@@ -14,7 +14,15 @@ function ListDemo() {
   let list = ["mumbai", "delhi", "calcutta"];
   return(
     <>
-    
+      {list.map((item) => (
+        <>
+        <h1>hello world</h1>
+        </>
+      ))}
+
+     {list.map((item) => "hello" + item)}
+
+     <hr/>
     <h1>{data}</h1>
     {list.map((item) => item)}
   
