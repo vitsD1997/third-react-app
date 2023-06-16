@@ -1,22 +1,23 @@
 function App() {
   return (
     <>
-    MessageDemo
-    <MessageDemo name="vitthal" email="v@gmail.com"/>
-    <MessageDemo name="amol" email="A@gmail.com"/>
-    <MessageDemo name="babasaheb" email="b@gamil.com"/>
-    <MessageDemo name="rghunathrao" email="r@gmail.com"/>
+    <h1>props demo</h1>
+    <ListDemo />
     </>
   );
     
   
 }
 
-function MessageDemo({email, name}) {
+function ListDemo() {
+  let data = "hello universe";
+  let list = ["mumbai", "delhi", "calcutta"];
   return(
     <>
-    <h1>Hello {name} {email}</h1>
     
+    <h1>{data}</h1>
+    {list.map((item) => item)}
+  
     </>
   );
 }
