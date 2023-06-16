@@ -1,21 +1,21 @@
 function App() {
   return (
     <>
-    
-    <MessageDemo name="vitthal"/>
-    <MessageDemo name="amol"/>
-    <MessageDemo name="babasaheb"/>
-    <MessageDemo name="rghunathrao"/>
+    MessageDemo
+    <MessageDemo name="vitthal" email="v@gmail.com"/>
+    <MessageDemo name="amol" email="A@gmail.com"/>
+    <MessageDemo name="babasaheb" email="b@gamil.com"/>
+    <MessageDemo name="rghunathrao" email="r@gmail.com"/>
     </>
   );
     
   
 }
 
-function MessageDemo(props) {
+function MessageDemo({email, name}) {
   return(
     <>
-    <h1>Hello Message</h1>
+    <h1>Hello {name} {email}</h1>
     
     </>
   );
