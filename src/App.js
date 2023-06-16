@@ -11,21 +11,27 @@ function App() {
 
 function ListDemo() {
   let data = "hello universe";
-  let list = ["mumbai", "delhi", "calcutta"];
+  let list = ["", "", "", "", ""];
+
+  let list1 = [];
+  for (let i = 0; i < 100; i++){
+    list1.push("");
+  }
   return(
     <>
+
+      <h1>{data}</h1>
       {list.map((item) => (
         <>
         <h1>hello world</h1>
         </>
       ))}
 
-     {list.map((item) => "hello" + item)}
-
-     <hr/>
-    <h1>{data}</h1>
-    {list.map((item) => item)}
-  
+     {list1.map((item) =>(
+      <div>
+        <h1>hello universe</h1>
+      </div>
+     ))}
     </>
   );
 }
