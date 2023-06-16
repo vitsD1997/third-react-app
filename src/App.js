@@ -4,7 +4,7 @@ import { useState } from "react";
 function App() {
   return (
     <>
-    <h1>Stateful demo</h1>
+    <h1>Stateful list</h1>
     <ListDemo />
     </>
   );
@@ -16,19 +16,22 @@ function ListDemo() {
  let [list, setList] = useState(["delhi"]);
  
   let addItemAction = () => {
-    let newList = [...list, "mumbai"];
+   let inputRef = document.querySelector("#id1");
+   let inputValue = inputRef.value;
 
-   console.log(newList);
-
+   let newList = [inputValue, ...list];
+    
    setList(newList);
+   inputRef.value = "";
   };
   return(
     <>
+       <input type="text" id="id1" placeholder="enter user input..." />
       <input type="button" value="add new item" onClick={addItemAction} />
       <h1>data</h1>
       {list.map((item) => (
         <>
-        <h1>hello {item}</h1>
+        <h1> {item}</h1>
         </>
       ))}
     </>
