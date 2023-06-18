@@ -40,26 +40,26 @@ function ContactUs() {
 
   return (
     <div className="container">
-      <div className="content">
+      <div className="d-flex justify-content-center">
         <div className="left-side">
           <div className="address details">
             <i className="fas fa-map-marker-alt"></i>
             <div className="topic">Address</div>
             <div className="text-one">Khargar, N15</div>
             <div className="text-two">Mumbai 06</div>
-          </div>
-          <div className="phone details">
-            <i className="fas fa-phone-alt"></i>
+            <div className="phone details"> </div>
             <div className="topic">Phone</div>
             <div className="text-one">+9184 5979 7302</div>
             <div className="text-two">+9197 6534 3537</div>
-          </div>
-          <div className="email details">
-            <i className="fas fa-envelope"></i>
+            <div className="email details"></div>
             <div className="topic">Email</div>
             <div className="text-one">aniket@ccat.com</div>
             <div className="text-two">kundan@ccat.com</div>
           </div>
+         
+           
+            
+          
         </div>
         <div className="row justify-content-center">
           <div className="col-sm-12 col-md-9">
